@@ -26,14 +26,9 @@ jobs:
 
       - name: Lost Pixel
         id: lp
-        uses: lost-pixel/lost-pixel@main
+        uses: lost-pixel/lost-pixel@v2.10.0
         env:
           LOST_PIXEL_MODE: update
-
-      - name: Debugging with tmate
-        uses: mxschmitt/action-tmate@v3.11
-        if: ${{ failure()}}
-
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
