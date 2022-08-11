@@ -20,3 +20,6 @@ jobs:
 
       - name: Run Next app
         run: npm run start &
+
+      - name: Build Storybook
+        run: npm run build-storybook
